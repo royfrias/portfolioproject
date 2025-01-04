@@ -12,6 +12,7 @@
   gap: 4rem;
   list-style: none;
   padding-right: 20px;
+  transition: transform 0.3s ease;
 }
 
 .nav a {
@@ -33,7 +34,6 @@
 .cta:link {
   display: inline-block;
   background-color: rgb(198, 179, 133);
-  /* color: var(--color-dark--1); */
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.6rem;
@@ -44,4 +44,48 @@
 
 .cta:hover {
   background-color: rgb(228, 209, 163);
+}
+
+/* .showMenu {
+  display: flex;
+} */
+
+@media screen and (max-width: 900px) {
+  /* Hide the menu by default */
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    border-top: 4px solid rgb(228, 209, 163);
+    border-radius: 5px;
+    color: white;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    list-style: none;
+    padding: 10px 10px;
+    gap: 0;
+    transform: translateY(-10px);
+    opacity: 0; /* Hide the menu */
+    transition: opacity 0.5s ease, transform 0.3s ease;
+    margin-top: -310px;
+  }
+
+  .menu .disappear {
+    top: 360px;
+  }
+
+  /* Show menu when open */
+  .showMenu {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 499.98px) {
+}
+
+@media screen and (max-width: 399.98px) {
 }

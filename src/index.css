@@ -159,3 +159,34 @@ input:focus {
   padding: 1rem 3rem;
   border-radius: 5px;
 }
+
+.calmtherapy {
+  height: 277.66px;
+}
+
+.label {
+  margin: 10px 0px;
+}
+
+.frimart {
+  background-color: #056bc9;
+  height: 277.66px;
+}
+
+.learn {
+  height: 277.66px;
+}
+
+.JuicePress {
+  background-color: #efddce;
+  height: 277.66px;
+}
+
+@media screen and (max-width: 599.98px) {
+}
+
+@media screen and (max-width: 499.98px) {
+}
+
+@media screen and (max-width: 399.98px) {
+}
