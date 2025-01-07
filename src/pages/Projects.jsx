@@ -1,39 +1,51 @@
 import PageNav from "../components/PageNav";
-import styles from "./AboutMe.module.css";
+import styles from "./Projects.module.css";
 import { Link } from "react-router-dom";
 import { LuMenu } from "react-icons/lu";
 
 function Projects() {
   return (
     <>
-      <main className={styles.aboutme}>
+      <main className={styles.projects}>
         <PageNav />
         <section>
           <div>
             <Link to="https://juicepress-capstone-project-client-side.onrender.com/">
-              <img className="JuicePress" src="/JPLogo.png" alt="JuicePress" />
+              <img
+                className={`${styles["project-img"]} JuicePress`}
+                src="/JPLogo.png"
+                alt="JuicePress"
+              />
+              <h3 className="label">CapStone Project JuicePress Intranet</h3>
             </Link>
-            <h3 className="label">CapStone Project JuicePress Intranet</h3>
           </div>
           <div>
             <Link to="https://frimart.netlify.app/">
-              <img className="frimart" src="/bluefrimart.png" alt="frimart" />
+              <img
+                className={`${styles["project-img"]} frimart`}
+                src="/bluefrimart.png"
+                alt="frimart"
+              />
+              <h3 className="label">FriMart</h3>
             </Link>
-            <h3 className="label">FriMart</h3>
           </div>
           <div>
             <Link to="https://teachforever.netlify.app/">
               <img
-                className="learn"
+                className={`${styles["project-img"]} learn`}
                 src="/learnacademy.png"
                 alt="learn academy"
               />
+              <h3 className="label">Learn Academy</h3>
             </Link>
-            <h3 className="label">Learn Academy</h3>
           </div>
           <div>
-            <Link to="https://lucarioowns.github.io/PortfolioProject/">
-              <img src="/stylish-portfolio.png" alt="stylish portofolio" />
+            <Link to="https://calmtherapy.netlify.app/">
+              <img
+                className={`${styles["project-img"]} calmtherapy`}
+                src="/calm4-free.png"
+                alt="calm therapy"
+              />
               <h3 className="label">Calm Therapy</h3>
             </Link>
           </div>

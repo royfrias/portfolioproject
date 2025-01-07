@@ -25,10 +25,11 @@
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 600;
+  color: black;
 }
 
 .nav a:global(.active) {
-  color: rgb(31, 31, 159);
+  color: black;
 }
 
 .cta:link {
@@ -46,9 +47,9 @@
   background-color: rgb(228, 209, 163);
 }
 
-/* .showMenu {
+.showMenu {
   display: flex;
-} */
+}
 
 @media screen and (max-width: 900px) {
   /* Hide the menu by default */
@@ -56,21 +57,22 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 308px;
     right: 0;
     background-color: #333;
     width: 100%;
     border-top: 4px solid rgb(228, 209, 163);
     border-radius: 5px;
     color: white;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     list-style: none;
     padding: 10px 10px;
     gap: 0;
     transform: translateY(-10px);
     opacity: 0; /* Hide the menu */
+    visibility: hidden;
     transition: opacity 0.5s ease, transform 0.3s ease;
     margin-top: -310px;
+    cursor: pointer;
   }
 
   .menu .disappear {
@@ -79,13 +81,8 @@
 
   /* Show menu when open */
   .showMenu {
-    display: flex;
     opacity: 1;
+    visibility: visible;
     transform: translateY(0);
   }
-}
-@media screen and (max-width: 499.98px) {
-}
-
-@media screen and (max-width: 399.98px) {
 }

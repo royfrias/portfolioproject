@@ -1,0 +1,135 @@
+.projects {
+  min-height: 100vh;
+  background-color: var(--color-dark--1);
+  display: flex;
+  flex-direction: column;
+}
+
+.projects section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+  width: 80%;
+  margin: 4rem auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.projects section div {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects section div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Ensure the links inside the projects section are white */
+.projects a {
+  color: white; /* Set link color to white */
+  text-decoration: none; /* Remove the underline */
+}
+
+.projects a:hover {
+  color: white; /* Keep the color white on hover */
+  text-decoration: underline; /* Optionally, add underline on hover */
+}
+
+/* Optional: You can also add active state styles */
+.projects a:active {
+  color: white;
+}
+
+.projects .project-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.projects .label {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-light--1);
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: rgb(198, 179, 133);
+  text-align: center;
+  color: #28282b;
+}
+
+.copyright-text {
+  color: #28282b;
+}
+
+/* Large screens (desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .projects section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .projects .project-img {
+    max-width: 350px;
+  }
+
+  .projects .label {
+    font-size: 1.8rem;
+  }
+}
+
+/* Medium screens (tablets, 768px to 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .projects section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .projects .project-img {
+    max-width: 280px;
+  }
+
+  .projects .label {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small screens (phones, below 767px) */
+@media screen and (max-width: 767px) {
+  .projects section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .projects .project-img {
+    max-width: 450px; /* Increase image size significantly */
+    width: 100%; /* Ensure images are responsive */
+  }
+
+  .projects .label {
+    font-size: 1.5rem; /* Slightly larger label size for readability */
+  }
+}
+
+/* Extra small screens (below 480px) */
+@media screen and (max-width: 479px) {
+  .projects section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .projects .project-img {
+    max-width: 500px; /* Further increase for small screens */
+    width: 100%; /* Maintain responsiveness */
+  }
+
+  .projects .label {
+    font-size: 1.4rem;
+  }
+}

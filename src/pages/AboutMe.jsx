@@ -6,7 +6,7 @@ function AboutMe() {
     <>
       <main className={styles.aboutme}>
         <PageNav />
-        <section>
+        <section className="aboutme-section">
           <div>
             <h2>Hi! My name is Roy Frias. It’s a pleasure to meet you.</h2>
             <p>
@@ -54,7 +54,7 @@ function AboutMe() {
               to life and achieve your digital goals.
             </p>
           </div>
-          <img src="RoySilverSuit.jpg" alt="Roy Photo" />
+          <img className="suitImg" src="RoySilverSuit.jpg" alt="Roy Photo" />
         </section>
         <div className={styles.footer}>
           <div className="copyright w-col w-col-6">

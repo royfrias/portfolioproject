@@ -1,11 +1,11 @@
 import PageNav from "../components/PageNav";
-import styles from "./AboutMe.module.css";
+import styles from "./ContactMeForm.module.css";
+
 function ContactMeForm() {
   return (
     <>
-      <main className={styles.aboutme}>
+      <main className={styles.contactme}>
         <PageNav />
-
         <section>
           <div>
             <form

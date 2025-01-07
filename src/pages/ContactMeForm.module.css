@@ -1,0 +1,113 @@
+/* contact me form */
+.contactme {
+  background-color: var(--color-dark--1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactme section {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 3rem;
+}
+
+.form {
+  background-color: var(--color-dark--2);
+  border-radius: 7px;
+  padding: 2rem 3rem;
+  width: 51rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style-type: none;
+  /* flex: 1; */
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  width: 25%;
+  text-align: center;
+  background-color: rgb(198, 179, 133);
+}
+
+.button:hover {
+  background-color: rgb(158, 143, 106);
+}
+
+.form > div {
+  flex: 1;
+}
+
+.form ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form li {
+  margin-bottom: 1.5rem;
+}
+
+.form li h4 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.form li p,
+.form li a {
+  font-size: 1.4rem;
+}
+
+/* Contact details styling */
+.form .email a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: rgb(198, 179, 133);
+  text-align: center;
+  color: #28282b;
+}
+
+.copyright-text {
+  color: #28282b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .contactme section {
+    flex-direction: column; /* Stack the form and contact details vertically on smaller screens */
+    padding: 2rem 3rem;
+    gap: 2rem;
+  }
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    width: 100%;
+  }
+  .form ul {
+    padding-left: 0; /* Remove left padding on mobile */
+  }
+}
